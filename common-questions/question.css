@@ -1,0 +1,59 @@
+@font-face {
+    font-family: peyda;
+    src: url(../assets/PeydaWeb-Regular.woff),
+         url(../assets/PeydaWeb-Medium.woff),
+         url(../assets/PeydaWeb-Bold.woff);
+}
+:root{
+    --pink-color: #F51663;
+}
+body{
+    margin: 0;
+    font-family: peyda;
+}
+.common-questions{
+    width: 100vw;
+    height: max-content;
+    background-color: rgb(244, 238, 243);
+    direction: rtl;
+    padding-bottom: 70px;
+}
+.section-title{
+    text-align: center;
+}
+.section-title h1{
+    padding: 60px 0 25px 0;
+}
+.question{
+    width: 60%;
+    margin: 35px auto;
+    border-bottom: 2px dashed lightgray ;
+}
+.question:last-child{
+    border-bottom: none;
+}
+.question-counter{
+    border: 2px solid var(--pink-color) ;
+    border-radius: 11px;
+    text-align: center;
+    padding-top: 6px;
+    width: 44px;
+}
+.question-counter span{
+    color: var(--pink-color);
+    font-size: 30px;
+    font-weight: 600;
+}
+.question-title{
+    color: var(--pink-color);
+    margin: 10px 0 20px 0;
+    font-size: 23px;
+}
+.description{
+    text-align: justify;
+    margin-bottom: 35px;
+}
+.description p{
+    font-size: 19px;
+    color: #333333;
+}
