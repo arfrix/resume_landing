@@ -1,96 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalog</title>
-    <style>
-        body { padding: 0px;;margin: 0px;}
-        .w3-image {
-    max-width: 100%;
-    height: auto;
-}
-.w3-text-light-grey{
-    color:#f1f1f1!important;
-}
-.w3-border {
-    border: 1px solid #ccc!important;
-}
-.w3-display-middle {
-     margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    border-radius: 25px;
-}
-.w3-wide {
-    letter-spacing: 4px;
-}
-.w3-center {
-    text-align: center!important;
-}
-.purple-box{
-   
-   
-  z-index: 2; /* green box will be above black box */
- 
-  position: absolute;
-    z-index: 2;
-    background: #9F0A67;
-    width: 100%;
-    left: 0px;
-    top: 0px;
-    height: 600px;
-}
-
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalog</title>
+  <link href="catalog.css" rel="stylesheet" type="text/css" />
+  <style>
+  </style>
 </head>
+  <!-- Page content -->
 <body>
-   
-    <!-- <header class="w3-display-container w3-content w3-center">
-        <img class="w3-image" src="img/1.png" alt="Me" width="100%" height="600">
-        <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
-            <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
-            <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
-          </div>
-          <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
-            <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
-            <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
-          </div>
-          <div class="w3-display-middle w3-padding-large w3-border w3-wide w3-text-light-grey w3-center">
-            <h1 class="w3-hide-medium w3-hide-small w3-xxxlarge">JANE DOE</h1>
-            <h5 class="w3-hide-large" style="white-space:nowrap">JANE DOE</h5>
-            <h3 class="w3-hide-medium w3-hide-small">PHOTOGRAPHER</h3>
-          </div>
-    </header>
-    <div class="purple-box"></div>
-   -->
-
-    <!-- Page content -->
-    <!-- <div class="w3-content w3-padding-large w3-margin-top" id="portfolio">
-        <div class="w3-light-grey w3-padding-large w3-padding-32 w3-margin-top" id="contact">
-            <h3 class="w3-center">دقیقا چه چیزهایی یاد می گیریم؟</h3>
-            <hr>
-           
-          </div>
-    </div> -->
-    <div>
-      <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-      width="1920.000000pt" height="600.000000pt" viewBox="0 0 1920.000000 600.000000"
-      preserveAspectRatio="xMidYMid meet">
-     
-     <g transform="translate(0.000000,600.000000) scale(0.100000,-0.100000)"
-     fill="#000000" stroke="none">
-     <path d="M0 3000 l0 -3000 9600 0 9600 0 0 3000 0 3000 -9600 0 -9600 0 0
-     -3000z"/>
-     </g>
-     </svg>
-     
+  <!-- Page header -->
+  <header class="purple-box catalog-display-container catalog-content catalog-center">
+    <!-- <img class="catalog-image" src="https://images.unsplash.com/photo-1606247357835-d27fe83fc6a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3RhcnJ5JTIwbmlnaHR8ZW58MHx8MHx8&w=1000&q=80" alt="Me" width="100%" height="600"> -->
+    <div class="catalog-boxes">
+      <div class="catalog-column catalog-header-box1 catalog-header-box-overlay">
+        <h1 class="catalog-xxxlarge catalog-light-yellow catalog-text-h1">33</h1>
+        <h5 class="catalog-hide-large catalog-xxlarge catalog-text-box" style="white-space:nowrap">محتوای رایگان</h5>
+        <h3 class="catalog-text-box-rotateminues21 catalog-light-yellow">درصد</h3>
+      </div>
+      <div class="catalog-column catalog-header-box2 catalog-header-box-overlay">
+        <h1 class="catalog-xxxlarge catalog-light-yellow catalog-text-h1">58</h1>
+        <h5 class="catalog-hide-large catalog-xxlarge catalog-text-box" style="white-space:nowrap">ویدیو آموزشی</h5>
+        <h3 class="catalog-text-box-rotateminues21 catalog-light-yellow">دقیقه</h3>
+      </div>
+      <div class="catalog-column catalog-header-box3 catalog-header-box-overlay">
+        <h1 class="catalog-xxxlarge catalog-light-yellow catalog-text-h1">3</h1>
+        <h5 class="catalog-hide-large   catalog-xxlarge catalog-text-box" style="white-space:nowrap">قالب رزومه</h5>
+        <h3 class="catalog-text-box-rotateminues21 catalog-light-yellow">نمونه</h3>
+      </div>
     </div>
+
+  </header>
+
+  <!-- Page Tite Catalog -->
+  <div class="catalog-content catalog-padding-large catalog-margin-top" id="portfolio">
+    <div class="catalog-light-grey catalog-padding-large catalog-padding-32 catalog-margin-top" id="contact">
+      <h3 class="catalog-center catalog-title" >دقیقا چه چیزهایی یاد می گیریم؟</h3>
+    </div>
+  </div>
+  <!--   Catalog -->
+  <section>
+    <div class="detailsdiv">
+      <details open>
+        <summary>
+          <span> نام فصل اول؟</span>
+          <hr class="style10" />
+        </summary>
+        <div>
+
+          <ul class="sessions">
+            <li>
+              <div class="sessionlist">
+                <div>
+                  <p>درس 1: اشتباهات رایج</p>
+
+                </div>
+
+                <div>
+                  <p>5:35</p>
+                </div>
+              </div>
+
+
+            </li>
+            <li>
+              <div class="sessionlist">
+                <div>
+                  <p>درس 2: تکمیل هدر</p>
+
+                </div>
+
+                <div>
+                  <p>5:35</p>
+                </div>
+              </div>
+
+
+            </li>
+            <li>
+              <div class="sessionlist">
+                <div>
+                  <p>درس 3: نوشتن سامری و آبجکتیو</p>
+
+                </div>
+
+                <div>
+                  <p>5:35</p>
+                </div>
+              </div>
+
+
+            </li>
+            <li>
+              <div class="sessionlist">
+                <div>
+                  <p>درس 4: تکمیل تجارب شغلی</p>
+
+                </div>
+
+                <div>
+                  <p>5:35</p>
+                </div>
+              </div>
+
+            </li>
+            <li>
+              <div class="sessionlist">
+                <div>
+                  <p>درس 5: بخش مهارت</p>
+                </div>
+
+                <div>
+                  <p>5:35</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </details>
+      <details>
+        <summary>
+          نام فصل دوم؟
+          <hr class="style10" />
+        </summary>
+        <div>
+        </div>
+      </details>
+      <details>
+        <summary>
+
+          نام فصل سوم؟
+          <hr class="style10" />
+        </summary>
+        <div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          نام فصل چهارم؟
+          <hr class="style10" />
+        </summary>
+        <div>
+        </div>
+      </details>
+      <details>
+        <summary>
+          نام فصل پنجم؟
+          <hr class="style10" />
+        </summary>
+        <div>
+        </div>
+      </details>
+    </div>
+  </section>
+  <section>
+    <br />
+    <br />
+    <br />
+  </section>
 </body>
+
 </html>
