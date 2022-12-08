@@ -1,0 +1,125 @@
+@font-face {
+    font-family: peyda;
+    src: url(../assets/PeydaWeb-Regular.woff),
+         url(../assets/PeydaWeb-Medium.woff),
+         url(../assets/PeydaWeb-Bold.woff);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    font-family: peyda;
+}
+
+html {
+    font-size: calc(90% + .8vmin);
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+:any-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.worth-it-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 8rem;
+    background-color: #F5F8F7;
+}
+
+.first-part {
+    padding: .8rem;
+    border: dashed 3px #fff;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.first-part-content {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    padding: 1.5rem 2rem;
+}
+
+.first-part-video {
+    position: relative;
+    border-radius: 60px;
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    -ms-border-radius: 60px;
+    -o-border-radius: 60px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.first-part-video img {
+    width: 100%;
+}
+
+.first-part-video div {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0 0 0 0;
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 20%, rgba(0,212,255,0) 60%);
+}
+
+.first-part-video svg {
+    position: absolute;
+    right: 1rem;
+    bottom: 1rem;
+    z-index: 5;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.first-part-text {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.first-part-text-title {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.first-part-text p {
+    text-align: right;
+    line-height: 2;
+}
+
+.first-part-text button {
+    margin-top: .5rem;
+    padding: .3rem 2rem .3rem 4rem;
+    font-size: 1.5rem;
+    background-color: #F51663;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
