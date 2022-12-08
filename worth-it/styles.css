@@ -182,3 +182,30 @@ html {
     color: #B3B3B3;
     text-align: right;
 }
+
+.third-part {
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    width: 45%;
+    text-align: right;
+}
+
+.third-part-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #0A4737;
+}
+
+.third-part-text {
+    color: #191919;
+    text-align: right;
+    line-height: 1.5;
+}
