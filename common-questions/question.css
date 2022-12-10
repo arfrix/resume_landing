@@ -56,4 +56,62 @@ body{
 .description p{
     font-size: 19px;
     color: #333333;
+    margin: 0;
+}
+
+@media screen and (max-width: 1297px){
+    .question{
+        margin: 25px auto;
+    }
+    .question-counter{
+        padding-top: 6px;
+        width: 40px;
+    }
+    .question-counter span{
+        font-size: 23px;
+    }
+    .question-title{
+        margin: 8px 0 10px 0;
+    }
+    .description{
+        margin-bottom: 18px;
+    }
+}
+@media screen and (max-width: 866px){
+    .question{
+        margin: 15px auto;
+    }
+    .question-counter{
+        padding-top: 6px;
+        width: 40px;
+    }
+    .question-counter span{
+        font-size: 25px;
+    }
+    .description{
+        margin-bottom: 15px;
+    }
+    .description p{
+        font-size: 16px;
+    }
+    .question-title{
+        margin: 5px 0 5px 0;
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 530px){
+    .question-counter{
+        padding-top: 6px;
+        width: 34px;
+    }
+    .question-counter span{
+        font-size: 20px;
+    }
+    .description p{
+        font-size: 15px;
+    }
+    .question-title{
+        font-size: 17px;
+    }
 }
