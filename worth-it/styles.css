@@ -16,6 +16,7 @@
 }
 
 html {
+    font-size: calc(.75em + .5vmin);
     scroll-behavior: smooth;
     height: 100%;
 }
@@ -30,12 +31,13 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8rem;
+    padding: 8rem 0;
     background-color: #F5F8F7;
 }
 
 .first-part {
-    padding: .8rem;
+    margin: 1rem;
+    padding: .5rem;
     border: dashed 3px #fff;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -55,18 +57,20 @@ html {
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem;
 }
 
 .first-part-video {
     position: relative;
-    border-radius: 60px;
-    -webkit-border-radius: 60px;
-    -moz-border-radius: 60px;
-    -ms-border-radius: 60px;
-    -o-border-radius: 60px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
     overflow: hidden;
-    width: 40%;
+    max-width: 40rem;
+    height: 100%;
+    margin-left: 2rem;
 }
 
 .first-part-video img {
@@ -91,27 +95,34 @@ html {
 }
 
 .first-part-text {
-    width: 55%;
+    position: relative;
+    max-width: 40rem;
+    height: 100%;
+    margin-right: 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
+    text-align: right;
 }
 
 .first-part-text-title {
     font-size: 1.5rem;
-    margin-bottom: .5rem;
+    font-weight: 200;
+    word-spacing: 5px;
     color: #0A4737;
+    margin-bottom: 1.2rem;
 }
 
 .first-part-text p {
     text-align: right;
     line-height: 2;
     color: #191919;
+    font-size: 1rem;
 }
 
 .first-part-text button {
-    margin-top: .5rem;
+    margin-top: 1rem;
     padding: .3rem 3rem .3rem 6rem;
     font-size: 1.5rem;
     background-color: #F51663;
@@ -139,11 +150,13 @@ html {
     flex-direction: column;
     background-color: #fff;
     margin-top: 5rem;
-    width: 50%;
+    max-width: 60rem;
+    text-align: right;
 }
 
 .second-part-title {
     font-size: 1.5rem;
+    word-spacing: 5px;
     margin-bottom: 1rem;
     color: #0A4737;
 }
@@ -152,6 +165,7 @@ html {
     color: #191919;
     text-align: right;
     line-height: 2;
+    font-size: 1rem;
 }
 
 .second-part-items {
@@ -181,6 +195,7 @@ html {
 .second-part-item p {
     color: #B3B3B3;
     text-align: right;
+    font-size: 1rem;
 }
 
 .third-part {
@@ -194,12 +209,13 @@ html {
     align-items: center;
     flex-direction: column;
     margin-top: 5rem;
-    width: 45%;
+    max-width: 35rem;
     text-align: right;
 }
 
 .third-part-title {
     font-size: 1.5rem;
+    word-spacing: 5px;
     margin-bottom: 1rem;
     color: #0A4737;
 }
@@ -208,4 +224,94 @@ html {
     color: #191919;
     text-align: right;
     line-height: 1.5;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 1500px) {
+    html {
+        font-size: calc(.5em + .5vmin);
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    html {
+        font-size: calc(.4em + .5vmin);
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    html {
+        font-size: calc(.3em + .5vmin);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: calc(.5em + .5vmin);
+    }
+
+    .first-part-content {
+        justify-content: center;
+        align-items: space-between;
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    .first-part-video {
+        margin-left: 0;
+        margin-bottom: 2rem;
+        max-width: 30rem;
+    }
+
+    .first-part-text {
+        margin-right: 0;
+        margin-top: 2rem;
+        max-width: 30rem;
+    }
+    
+    .first-part-text p {
+        font-size: 1.5rem;
+    }
+
+    .first-part-text-title {
+        font-size: 2rem;
+    }
+
+    .first-part-text button {
+        font-size: 2rem;
+    }
+
+    .second-part {
+        width: 33rem;
+    }
+
+    .second-part-title {
+        font-size: 2rem;
+        white-space: nowrap;
+    }
+
+    .second-part-item svg {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .second-part-text {
+        font-size: 1.5rem;
+    }
+
+    .second-part-item p {
+        font-size: 1.2rem;
+    }
+    
+    .third-part {
+        width: 30rem;
+    }
+    
+    .third-part-title {
+        font-size: 2rem;
+    }
+
+    .third-part-text {
+        font-size: 1.5rem;
+    }
 }
