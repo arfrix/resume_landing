@@ -61,6 +61,7 @@ body{
 
 @media screen and (max-width: 1297px){
     .question{
+        width: 70%;
         margin: 25px auto;
     }
     .question-counter{
@@ -78,15 +79,21 @@ body{
     }
 }
 @media screen and (max-width: 866px){
+    .section-title h1{
+        font-weight: 500;
+    }
     .question{
         margin: 15px auto;
+        width: 70%;
     }
     .question-counter{
+        border: 1.5px solid var(--pink-color) ;
         padding-top: 6px;
-        width: 40px;
+        width: 36px;
     }
     .question-counter span{
-        font-size: 25px;
+        font-size: 23px;
+        font-weight: 500;
     }
     .description{
         margin-bottom: 15px;
@@ -97,13 +104,19 @@ body{
     .question-title{
         margin: 5px 0 5px 0;
         font-size: 20px;
+        font-weight: 500;
     }
 
 }
 @media screen and (max-width: 530px){
+    .section-title h1{
+        font-weight: 500;
+    }
+    .question{
+        width: 80%;
+    }
     .question-counter{
-        padding-top: 6px;
-        width: 34px;
+        width: 32px;
     }
     .question-counter span{
         font-size: 20px;
@@ -112,6 +125,12 @@ body{
         font-size: 15px;
     }
     .question-title{
-        font-size: 17px;
+        font-size: 19px;
+        font-weight: 400;
+    }
+}
+@media screen and (max-width: 360px){
+    .section-title h1{
+        font-size: 22px;
     }
 }
