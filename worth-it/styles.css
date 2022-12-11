@@ -62,14 +62,17 @@ html {
 
 .first-part-video {
     position: relative;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
     overflow: hidden;
     max-width: 40rem;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: 2rem;
 }
 
@@ -111,7 +114,7 @@ html {
     font-weight: 200;
     word-spacing: 5px;
     color: #0A4737;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .first-part-text p {
@@ -148,9 +151,9 @@ html {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #fff;
+    background-color: #ffffffaa;
     margin-top: 5rem;
-    max-width: 60rem;
+    max-width: 50rem;
     text-align: right;
 }
 
@@ -227,6 +230,19 @@ html {
     font-size: 1rem;
 }
 
+.regret-text {
+    color: #ff0000;
+    font-size: 1rem;
+    text-align: right;
+    position: relative;
+    right: 30rem;
+    transform: rotate(-20deg);
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+}
+
 @media only screen and (max-width: 1500px) {
     html {
         font-size: calc(.5em + .5vmin);
@@ -254,7 +270,7 @@ html {
         justify-content: center;
         align-items: space-between;
         flex-direction: column;
-        padding: 1.5rem;
+        padding: 3rem 1.5rem;
     }
 
     .first-part-video {
@@ -283,6 +299,7 @@ html {
 
     .second-part {
         width: 33rem;
+        padding: 3rem 1.5rem;
     }
 
     .second-part-title {
@@ -313,5 +330,11 @@ html {
 
     .third-part-text {
         font-size: 1.5rem;
+    }
+
+    .regret-text {
+        right: 10rem;
+        margin-top: 5rem;
+        font-size: 1.2rem;
     }
 }
