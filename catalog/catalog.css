@@ -238,7 +238,6 @@ body {
 .catalog-detail details[open] summary div {
     border-bottom: 1px solid #ced0ce;
     border-bottom-color: (255 255 255, 16%) !important;
-    /* border-image: linear-gradient(0.92turn, rgba(56, 2, 155, 0), rgba(140 139 139), rgba(56, 2, 155, 0)); */
     border-image-slice: 1;
     padding: 5px 10px 0px 10px;
     width: 100%;
@@ -263,7 +262,6 @@ body {
         order: -1;
     }
     .catalog-header {
-
         height: auto;
     }
     .catalog-wraper {
