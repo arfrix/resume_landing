@@ -9,14 +9,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    outline: none;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
     font-family: peyda;
 }
 
 html {
-    font-size: calc(.75em + .5vmin);
+    font-size: calc(5px + .5vw);
     scroll-behavior: smooth;
     height: 100%;
 }
@@ -243,29 +242,7 @@ html {
     -o-transform: rotate(-20deg);
 }
 
-@media only screen and (max-width: 1500px) {
-    html {
-        font-size: calc(.5em + .5vmin);
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    html {
-        font-size: calc(.4em + .5vmin);
-    }
-}
-
-@media only screen and (max-width: 1100px) {
-    html {
-        font-size: calc(.3em + .5vmin);
-    }
-}
-
 @media only screen and (max-width: 768px) {
-    html {
-        font-size: calc(.5em + .5vmin);
-    }
-
     .first-part-content {
         justify-content: center;
         align-items: space-between;
