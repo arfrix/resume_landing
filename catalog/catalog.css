@@ -17,7 +17,7 @@ body {
     direction: rtl;
     font-family: pmedium;
     line-height: 1.5;
-    background-color: rgb(245, 248, 247);
+    background-color:#ffffff; 
     min-height: 100vh;
     font-size: 1.25rem;
 }
@@ -151,13 +151,14 @@ body {
 }
 .catalog-detail-content {
 
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
     padding: 0px 1.5em 1.5em 1.5em;
     background-color: #f5f8f7;
     border-bottom-left-radius: 13px;
     border-bottom-right-radius: 13px;
+    padding-bottom: 5px;
 }
 .catalog-detail-item {
     display: flex;
@@ -167,6 +168,8 @@ body {
     margin: 0px;
     align-items: center;
     justify-content: space-between;
+    height: 35px;
+    font-size: 15px;
 }
 .catalog-detail-item div {
     border: 0px;
@@ -174,7 +177,7 @@ body {
     margin: 0px;
 }
 .catalog-detail-item>:nth-last-child(odd) {
-    color: #bac8c5;
+    color: #ced0ce;
     align-self: auto;
 }
 .catalog-detail details+details {
@@ -182,7 +185,7 @@ body {
 }
 .catalog-detail summary {
     list-style: none;
-    border: 1px solid #ddd;
+    border: 1px solid transparent;
     padding: .75em 1.5em;
     cursor: pointer;
     position: relative;
@@ -220,17 +223,18 @@ body {
     position: relative;
 }
 .catalog-detail details[open] summary div {
-    border-bottom: 1px solid transparent;
-    border-image: linear-gradient(0.92turn, rgba(56, 2, 155, 0), rgba(140 139 139), rgba(56, 2, 155, 0));
+    border-bottom: 1px solid #ced0ce;
+    /* border-image: linear-gradient(0.92turn, rgba(56, 2, 155, 0), rgba(140 139 139), rgba(56, 2, 155, 0)); */
     border-image-slice: 1;
+    padding: 5px 10px 0px 10px;
     width: 100%;
-    padding: 3px;
+   
 }
 .catalog-detail details[open] summary:before {
     content: "×";
 }
 .catalog-detail summary:hover {
-    background-color: transparent;
+    background-color: #f5f8f7;
 }
 /* <!--  Mobile Css --> */
 @media only screen and (max-width: 1023px) {
@@ -238,7 +242,7 @@ body {
         flex-direction: row;
     }
     .catalog-detail-item {
-        flex-direction: column;
+        /* flex-direction: column; */
         line-height: auto;
         justify-content: space-between;
     }
@@ -297,7 +301,6 @@ body {
     }
 
     .catalog-detail-item {
-        text-align: center;
         line-height: auto;
         justify-content: space-between;
     }
