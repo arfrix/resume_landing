@@ -26,3 +26,34 @@ body{
     margin: 0 auto;
     text-align: justify;
 }
+.wish-list-section{
+    margin: 50px;
+}
+#wish-list{
+    width: 30%;
+    margin: 0 auto;
+}
+#wish-list li{
+    list-style-type: none;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 19px;
+    color: rgb(123, 123, 123);
+    width: 90%;
+}
+#wish-list li button{
+    all: unset;
+    width: 80%;
+    padding: 12px;
+    background-color: rgb(233, 233, 233);
+    border-radius: 7px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: transform .5s;
+}
+#wish-list li button:hover{
+    background-color: var(--pink-color);
+    box-shadow: 3px 5px 8px -2px #f8a3c1;
+    color: #ffffff;
+    transform: scale(1.2, 1.1);
+}
