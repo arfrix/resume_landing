@@ -8,14 +8,13 @@
     --pink-color: #F51663;
 }
 body{
-    margin: 0;
     font-family: peyda;
+    direction: rtl;
+    margin: 0;
 }
 .common-questions{
-    width: 100vw;
     height: max-content;
     background-color: rgb(244, 238, 243);
-    direction: rtl;
     padding-bottom: 70px;
 }
 .section-title{
@@ -129,8 +128,8 @@ body{
         font-weight: 400;
     }
 }
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
     .section-title h1{
-        font-size: 22px;
+        font-size: 21px;
     }
 }
