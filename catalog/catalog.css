@@ -18,7 +18,7 @@ body {
     background-color:#ffffff; 
     min-height: 100vh;
 }
-.container {
+.catalog-container {
     font-variant-ligatures: none;
     font-family: pmedium;
     line-height: 1.5;
