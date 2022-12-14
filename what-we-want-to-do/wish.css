@@ -28,6 +28,7 @@ body{
 }
 .wish-list-section{
     margin: 50px;
+    position: relative;
 }
 #wish-list{
     width: 30%;
@@ -52,8 +53,16 @@ body{
     transition: transform .5s;
 }
 #wish-list li button:hover{
+    background-color: rgb(215, 215, 215);
+}
+#wish-list li button:focus{
     background-color: var(--pink-color);
     box-shadow: 3px 5px 8px -2px #f8a3c1;
     color: #ffffff;
     transform: scale(1.2, 1.1);
+}
+#cases-parent p{
+    width: 170px;
+    text-align: center;
+    direction: rtl;
 }
