@@ -23,19 +23,21 @@ body {
   margin: 0;
   font-family: peyda;
 }
-.introduction {
+.introduction__container {
+  padding: 0 140px;
   padding-top: 90px;
 }
-.introduction__container {
+.introduction {
   background-color: #fed71d;
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 350px;
   padding: 0 10px;
+  border-radius: 84px;
 }
 .introduction__image-container {
-  width: 22%;
+  width: 28%;
 }
 .introduction__image {
   width: 425px;
@@ -43,7 +45,7 @@ body {
   bottom: 42px;
 }
 .introduction__description {
-  width: 78%;
+  width: 72%;
   padding-left: 20px;
 }
 .introduction__title {
@@ -56,7 +58,7 @@ body {
   margin-bottom: 0;
 }
 @media screen and (max-width: 1817px) {
-  .introduction__container {
+  .introduction {
     height: 320px;
   }
   .introduction__image {
@@ -74,17 +76,21 @@ body {
 }
 @media screen and (max-width: 1633px) {
   .introduction__container {
+    padding: 0 90px;
+    padding-top: 60px;
+  }
+  .introduction {
     height: 290px;
   }
   .introduction__image {
-    width: 340px;
-    bottom: 29px;
+    width: 320px;
+    bottom: 18px;
   }
   .introduction__image-container {
-    width: 24%;
+    width: 26%;
   }
   .introduction__description {
-    width: 76%;
+    width: 74%;
   }
   .introduction__title {
     font-size: 28px;
@@ -93,48 +99,42 @@ body {
     font-size: 20px;
   }
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 1297px) {
+  .introduction {
+    border-radius: 60px;
+  }
+  .introduction__container {
+    padding: 0 90px;
+    padding-top: 50px;
+  }
   .introduction__image {
     width: 310px;
-    bottom: 13px;
-  }
-  .introduction__image-container {
-    width: 26%;
-  }
-  .introduction__description {
-    width: 74%;
-  }
-}
-@media screen and (max-width: 1140px) {
-  .introduction__container {
-    height: 250px;
-  }
-  .introduction__image {
-    width: 270px;
     bottom: 12px;
   }
   .introduction__image-container {
-    width: 30%;
+    width: 29%;
   }
   .introduction__description {
-    width: 70%;
+    width: 71%;
   }
   .introduction__title {
-    font-size: 24px;
-    margin-bottom: 6px;
+    font-size: 26px;
   }
   .introduction__text {
     font-size: 16px;
   }
 }
-@media screen and (max-width: 866px) {
-  .introduction__image {
-    width: 240px;
-    bottom: -2px;
+@media screen and (max-width: 1133px) {
+  .introduction__container {
+    padding: 0 50px;
+    padding-top: 50px;
   }
-  .introduction__title {
-    font-size: 24px;
-    margin-top: 0;
+  .introduction {
+    height: 250px;
+  }
+  .introduction__image {
+    width: 270px;
+    bottom: 12px;
   }
   .introduction__image-container {
     width: 32%;
@@ -143,24 +143,26 @@ body {
     width: 68%;
   }
   .introduction__text {
+    font-size: 16px;
     line-height: 1.8;
   }
 }
-@media screen and (max-width: 700px) {
-  .introduction__container {
+@media screen and (max-width: 866px) {
+  .introduction {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    height: 420px;
+    height: 480px;
+    border-radius: 40px;
   }
   .introduction__image {
-    width: 200px;
-    bottom: 50px;
+    width: 240px;
+    bottom: 30px;
   }
-  .introduction__description {
-    position: relative;
-    top: -20px;
+  .introduction__title {
+    font-size: 20px;
+    margin-top: 0;
   }
   .introduction__image-container {
     text-align: center;
@@ -168,15 +170,46 @@ body {
   }
   .introduction__description {
     width: 100%;
+    position: relative;
     padding: 0 20px;
+    top: -20px;
+  }
+  .introduction__text {
+    line-height: 1.8;
+    font-size: 18px;
   }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 700px) {
+  .introduction {
+    height: 500px;
+  }
+  .introduction__image {
+    width: 200px;
+    bottom: 50px;
+  }
+  .introduction__description {
+    position: relative;
+    top: -40px;
+  }
+}
+@media screen and (max-width: 530px) {
   .introduction__container {
-    height: 515px;
+    padding: 0 20px;
+    padding-top: 50px;
+  }
+  .introduction {
+    height: 500px;
   }
   .introduction__image {
     width: 180px;
     bottom: 50px;
+  }
+  .introduction__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .introduction {
+    height: 535px;
   }
 }
