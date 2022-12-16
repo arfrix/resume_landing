@@ -1,49 +1,71 @@
-var wishes = [
-    {item:"اشتباهات" , cases:["تست۱" , "تست۱" , "تست۱ طولانی ترش کنم ببینم چی میشه" ,"تست۱" , "تست۱" ,"تست۱" , "تست۱حالا اینو یکم طولانی کنم"]},
-    {item:"انتخاب فرمت" , cases:["تست۲" , "تست۲" , "تست۲" , "تست۲"]},
-    {item:"تکمیل هدر" , cases:["تست۳" , "تست۳" , "تست۳" , "تست۳" , "تست۳" , "تست۳"]},
-    {item:"نوشتن سامری" , cases:["تست۴" , "تست۴" , "تست۴" , "تست۴" , "تست۴"]},
-    {item:"تکمیل تجارب" , cases:["تست۵" , "تست۵" , "تست۵" , "تست۵" , "تست۵" , "تست۵" , "تست۵"]},
-    {item:"بخش مهارت" , cases:["تست۶" , "تست۶" , "تست۶"]},
-    {item:"تحصیلات" , cases:["تست۷" , "تست۷" , "تست۷" , "تست۷" , "تست۷" , "تست۷"]}
+var buttons = document.getElementsByClassName('wish-list-btn');
+var item1 = document.getElementById('item-1');
+var item2 = document.getElementById('item-2');
+var item3 = document.getElementById('item-3');
+var item4 = document.getElementById('item-4');
+var screen = window.innerWidth;
 
-]
-var section = document.getElementsByClassName('wish-list-section');
-var list = document.getElementById('wish-list');
-var parent = document.getElementById('cases-parent');
 
-wishes.forEach(wish => {
-    var listItem = document.createElement('li');
-    var itemButton = document.createElement('button');
-    itemButton.innerHTML = wish.item;
-    listItem.appendChild(itemButton);
+function fillItems(first,second,third,fourth){
+    item1.innerHTML = first;
+    item2.innerHTML = second;
+    item3.innerHTML = third;
+    item4.innerHTML = fourth;
+}
+function insertAfter(newNode, existingNode) {
+    existingNode.parentNode.insertBefore(newNode, existingNode.nextSibling);
+}
 
-    const showCases = () =>{
-        //delete previous cases
-        parent.innerHTML = '';
-
-        //create each case and show in specific position
-        let increaseLeft = 30 ;
-        let increaseRight = 30 ;
-        wish.cases.forEach( (itemCase , index) =>{
-            var instance = document.createElement('p');
-            instance.innerHTML = itemCase;
-            instance.style.position = "absolute";
-            //i want to show the cases in two parts(left and right side of the list)
-            if(index < Math.floor(wish.cases.length/2)){
-                instance.style.left = 150+'px';
-                instance.style.top = (50 + increaseLeft)+'px';
-                increaseLeft += 80;
-            }else{
-                instance.style.right = 150+'px';
-                instance.style.top = (50 + increaseRight)+'px';
-                increaseRight += 80;
-            }
-
-            parent.appendChild(instance);
-        })
+function clicked(i){
+    //show active button with a specific style
+    for(let j=0 ; j<buttons.length ; j++){
+        if(buttons[j] !== buttons[i]){
+            buttons[j].classList.remove('active-btn' ,'no-hover');
+        }else{
+            buttons[i].classList.add('active-btn' ,'no-hover');
+        }
+    }
+    //to Fill items
+    switch(i){
+        case 0:
+            fillItems("آیتم شماره ۱ طولانی ترش کنم" , "آیتم شماره ۱" , "آیتم شماره ۱" , "آیتم شماره ۱ طولانی تر")
+            break;
+        case 1:
+            fillItems("آیتم شماره ۲ طولانی کنم ببینم چی میشه " , "آیتم شماره ۲" , "آیتم شماره ۲" , "آیتم شماره ۲")
+            break;
+        case 2:
+            fillItems("آیتم شماره ۳" , "آیتم شماره ۳" , "آیتم شماره ۳" , "آیتم شماره ۳")
+            break;  
+        case 3:
+            fillItems("آیتم شماره ۴" , "آیتم شماره ۴" , "آیتم شماره ۴" , "آیتم شماره ۴")
+            break;
+        case 4:
+            fillItems("آیتم شماره ۵" , "آیتم شماره ۵" , "آیتم شماره ۵" , "آیتم شماره ۵")
+            break;
+        case 5:
+            fillItems("آیتم شماره ۶" , "آیتم شماره ۶" , "آیتم شماره ۶" , "آیتم شماره ۶")
+            break;  
+        case 6:
+            fillItems("آیتم شماره ۷" , "آیتم شماره ۷" , "آیتم شماره ۷" , "آیتم شماره ۷")
+            break;
+        case 7:
+            fillItems("آیتم شماره ۸" , "آیتم شماره ۸" , "آیتم شماره ۸" , "آیتم شماره ۸")
+            break;
     }
 
-    list.appendChild(listItem);
-    itemButton.addEventListener("click" , showCases);
-})
+    //show items under buttons
+
+    if(screen <950 ){
+        const leftItems = document.getElementById("left-items");
+        const rightItems = document.getElementById("right-items");
+        const eachLi= document.getElementsByClassName("wish-list-item");
+        insertAfter(leftItems , eachLi[i])
+        insertAfter(rightItems , leftItems)
+    }
+
+}
+
+for(let i=0 ; i<buttons.length ; i++){
+    buttons[i].addEventListener('click' , () => clicked(i))
+}
+

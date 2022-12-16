@@ -12,6 +12,12 @@ body{
     direction: rtl;
     margin: 0;
 }
+li{
+    list-style-type: none;
+}
+.show{
+    display: inline-block;
+}
 .wish-section{
     width: 80%;
     padding: 35px 0;
@@ -29,20 +35,13 @@ body{
 .wish-list-section{
     margin: 50px;
     position: relative;
+    display: flex;
+    justify-content: space-evenly;
 }
-#wish-list{
-    width: 30%;
-    margin: 0 auto;
+.wish-list-section ul{
+    padding: 0;
 }
-#wish-list li{
-    list-style-type: none;
-    margin-bottom: 20px;
-    text-align: center;
-    font-size: 19px;
-    color: rgb(123, 123, 123);
-    width: 90%;
-}
-#wish-list li button{
+.wish-list-btn{
     all: unset;
     width: 80%;
     padding: 12px;
@@ -51,18 +50,63 @@ body{
     cursor: pointer;
     margin: 0 auto;
     transition: transform .5s;
+    margin-bottom: 15px;
+    text-align: center;
 }
-#wish-list li button:hover{
+.wish-list-btn:hover{
     background-color: rgb(215, 215, 215);
 }
-#wish-list li button:focus{
+.active-btn{
     background-color: var(--pink-color);
     box-shadow: 3px 5px 8px -2px #f8a3c1;
     color: #ffffff;
     transform: scale(1.2, 1.1);
 }
-#cases-parent p{
-    width: 170px;
+.no-hover{
+    pointer-events: none;
+}
+#items{
+    width: 30%;
+}
+#right-items , #left-items{
+    width: 20%;
+}
+#right-items{
+    text-align: left;
+}
+#left-items{
+    text-align: right;
+}
+#right-items li , #left-items li{
+    margin: 130px 0 0 0;
+    max-width: 150px;
     text-align: center;
-    direction: rtl;
+}
+
+
+@media screen and (max-width:1200px){
+    .wish-list-section{
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width:950px){
+    .wish-list-section{
+        flex-direction: column;
+    }
+    #items{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .wish-list-btn{
+        width: 100%;
+    }
+    #right-items, #left-items{
+        width: 100%;
+        margin-right: 20%;
+    }
+    #right-items li , #left-items li{
+        margin: 12px 0;  
+        max-width: 350px; 
+        text-align: right;
+    }
 }
