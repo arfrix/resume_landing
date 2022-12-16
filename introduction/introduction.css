@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/PeydaWeb-Regular.woff") format("woff");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/PeydaWeb-Medium.woff") format("woff");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Peyda";
+  src: url("../assets/PeydaWeb-Bold.woff") format("woff");
+  font-weight: 700;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: peyda;
+}
+.introduction {
+  padding-top: 90px;
+}
+.introduction__container {
+  background-color: #fed71d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 350px;
+  padding: 0 10px;
+}
+.introduction__image-container {
+  width: 22%;
+}
+.introduction__image {
+  width: 425px;
+  position: relative;
+  bottom: 42px;
+}
+.introduction__description {
+  width: 78%;
+  padding-left: 20px;
+}
+.introduction__title {
+  font-size: 35px;
+  color: #f51663;
+}
+.introduction__text {
+  font-size: 25px;
+  line-height: 2;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1817px) {
+  .introduction__container {
+    height: 320px;
+  }
+  .introduction__image {
+    width: 360px;
+    bottom: 25px;
+  }
+  .introduction__title {
+    font-size: 30px;
+    margin: 10px 0;
+  }
+  .introduction__text {
+    font-size: 22px;
+    line-height: 2;
+  }
+}
+@media screen and (max-width: 1633px) {
+  .introduction__container {
+    height: 290px;
+  }
+  .introduction__image {
+    width: 340px;
+    bottom: 29px;
+  }
+  .introduction__image-container {
+    width: 24%;
+  }
+  .introduction__description {
+    width: 76%;
+  }
+  .introduction__title {
+    font-size: 28px;
+  }
+  .introduction__text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .introduction__image {
+    width: 310px;
+    bottom: 13px;
+  }
+  .introduction__image-container {
+    width: 26%;
+  }
+  .introduction__description {
+    width: 74%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .introduction__container {
+    height: 250px;
+  }
+  .introduction__image {
+    width: 270px;
+    bottom: 12px;
+  }
+  .introduction__image-container {
+    width: 30%;
+  }
+  .introduction__description {
+    width: 70%;
+  }
+  .introduction__title {
+    font-size: 24px;
+    margin-bottom: 6px;
+  }
+  .introduction__text {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 866px) {
+  .introduction__image {
+    width: 240px;
+    bottom: -2px;
+  }
+  .introduction__title {
+    font-size: 24px;
+    margin-top: 0;
+  }
+  .introduction__image-container {
+    width: 32%;
+  }
+  .introduction__description {
+    width: 68%;
+  }
+  .introduction__text {
+    line-height: 1.8;
+  }
+}
+@media screen and (max-width: 700px) {
+  .introduction__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 420px;
+  }
+  .introduction__image {
+    width: 200px;
+    bottom: 50px;
+  }
+  .introduction__description {
+    position: relative;
+    top: -20px;
+  }
+  .introduction__image-container {
+    text-align: center;
+    width: 100%;
+  }
+  .introduction__description {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .introduction__container {
+    height: 515px;
+  }
+  .introduction__image {
+    width: 180px;
+    bottom: 50px;
+  }
+}
