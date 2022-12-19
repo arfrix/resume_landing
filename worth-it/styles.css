@@ -242,24 +242,24 @@ html {
     -o-transform: rotate(-20deg);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
     .first-part-content {
         justify-content: center;
         align-items: space-between;
         flex-direction: column;
-        padding: 3rem 1.5rem;
+        padding: 3rem;
     }
 
     .first-part-video {
         margin-left: 0;
         margin-bottom: 2rem;
-        max-width: 30rem;
+        max-width: 50rem;
     }
 
     .first-part-text {
         margin-right: 0;
         margin-top: 2rem;
-        max-width: 30rem;
+        max-width: 50rem;
     }
     
     .first-part-text p {
@@ -275,8 +275,8 @@ html {
     }
 
     .second-part {
-        width: 33rem;
-        padding: 3rem 1.5rem;
+        width: 55rem;
+        padding: 2rem;
     }
 
     .second-part-title {
@@ -298,7 +298,7 @@ html {
     }
     
     .third-part {
-        width: 30rem;
+        width: 50rem;
     }
     
     .third-part-title {
@@ -313,5 +313,41 @@ html {
         right: 10rem;
         margin-top: 5rem;
         font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .first-part-content {
+        padding: 1.5rem;
+    }
+
+    .first-part-video {
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+    }
+
+    .second-part {
+        width: 50rem;
+        padding: 2rem;
+    }
+
+    .second-part-item svg {
+        min-width: 1.5rem;
+        min-height: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .second-part {
+        width: 45rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .second-part {
+        width: 40rem;
     }
 }
