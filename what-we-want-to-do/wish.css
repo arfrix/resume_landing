@@ -1,0 +1,141 @@
+@font-face {
+  font-family: peyda;
+  src: url(../assets/PeydaWeb-Regular.woff), url(../assets/PeydaWeb-Medium.woff),
+    url(../assets/PeydaWeb-Bold.woff);
+}
+* {
+  box-sizing: border-box;
+}
+:root {
+  --pink-color: #f51663;
+}
+body {
+  font-family: peyda;
+  direction: rtl;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}
+.hideElement {
+  display: none;
+}
+.wish-section {
+  width: 100%;
+  padding: 0 140px;
+  margin: 60px auto 0;
+}
+.wish-title {
+  font-weight: 500;
+  text-align: center;
+}
+.wish-description {
+  width: 75%;
+  margin: 0 auto;
+  text-align: justify;
+}
+.wish-list-section {
+  margin: 50px 0;
+  position: relative;
+}
+.wish-list-item {
+  display: grid;
+  grid-template-areas: "right-submenu button left-submenu";
+}
+.wish-list-section ul {
+  padding: 0;
+}
+.btn {
+  grid-area: button;
+  text-align: center;
+}
+.wish-list-btn {
+  all: unset;
+  width: 462px;
+  height: 70px;
+  background-color: rgb(233, 233, 233);
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: transform 0.5s;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.wish-list-btn:hover {
+  background-color: rgb(215, 215, 215);
+}
+.active-btn {
+  background-color: var(--pink-color);
+  box-shadow: 3px 5px 8px -2px #f8a3c1;
+  color: #ffffff;
+  transform: scale(1.2, 1.1);
+}
+.no-hover {
+  pointer-events: none;
+}
+.right-submenu {
+  grid-area: right-submenu;
+  text-align: left;
+}
+.left-submenu {
+  grid-area: left-submenu;
+  text-align: right;
+}
+.submenu-item {
+  margin-bottom: 25px;
+}
+.submenu-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1817px) {
+}
+@media screen and (max-width: 1633px) {
+  .wish-section {
+    padding: 0 90px;
+  }
+}
+@media screen and (max-width: 1297px) {
+}
+@media screen and (max-width: 1133px) {
+  .wish-section {
+    padding: 0 50px;
+  }
+  .left-submenu {
+    margin-right: 50px;
+  }
+  .right-submenu {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 866px) {
+  .wish-list-btn {
+    width: 280px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .wish-list-item {
+    display: grid;
+    grid-template-areas: "button" "right-submenu" "left-submenu";
+  }
+  .left-submenu {
+    text-align: center;
+    margin: 0;
+  }
+  .right-submenu {
+    text-align: center;
+    margin: 0;
+    padding-top: 14px !important;
+  }
+  .submenu-item {
+    margin-bottom: 15px;
+  }
+  .submenu-item:last-child {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .wish-section {
+    padding: 0 20px;
+  }
+}
