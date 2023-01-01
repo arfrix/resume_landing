@@ -13,13 +13,7 @@
     -webkit-touch-callout: none;
     font-family: peyda;
 }
-
-html {
-    font-size: calc(5px + .5vw);
-    scroll-behavior: smooth;
-    height: 100%;
-}
-
+    
 :any-link {
     text-decoration: none;
     cursor: pointer;
