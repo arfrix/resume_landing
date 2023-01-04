@@ -17,6 +17,7 @@ function ShowItemsHandler(e) {
     const thirdSiblingNode = e.target.parentNode.previousElementSibling;
     firstSiblingNode.classList.remove("hideElement");
     thirdSiblingNode.classList.remove("hideElement");
+    //add animations
     if(screen>700){
         thirdSiblingNode.classList.add("fadeInLeft");
         firstSiblingNode.classList.add("fadeInRight");
@@ -31,4 +32,8 @@ function ShowItemsHandler(e) {
 
 for (let button of buttons) {
     button.addEventListener("click", ShowItemsHandler)
+    //add no-hover style for first wish-list-btn (before any click)
+    if(button.classList.contains("active-btn")){
+        button.classList.add("no-hover")
+    }
 }
