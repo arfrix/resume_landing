@@ -1048,18 +1048,18 @@ html {
     }
 
     .first-part-content {
-        width: 300px;
+        width: 335px;
         padding: 30px 20px;
     }
-
+    
     .first-part-video {
         min-width: 265px;
         height: 153px;
     }
-
+    
     .second-part {
-        width: 335px;
-        margin: 0;
+        width: 334px;
+        margin: 50px;
         padding: 15px;
     }
 
