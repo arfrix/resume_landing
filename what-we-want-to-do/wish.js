@@ -16,6 +16,8 @@ function ShowItemsHandler(e) {
     const thirdSiblingNode = e.target.parentNode.previousElementSibling;
     firstSiblingNode.classList.remove("hideElement");
     thirdSiblingNode.classList.remove("hideElement");
+    firstSiblingNode.classList.add("fadeInRight");
+    thirdSiblingNode.classList.add("fadeInLeft");
     e.target.classList.add("active-btn");
 }
 
