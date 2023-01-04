@@ -1,4 +1,5 @@
 const buttons = document.querySelectorAll(".wish-list-btn");
+var screen = window.innerWidth;
 
 
 function removeItemsHandler(element) {
@@ -16,8 +17,13 @@ function ShowItemsHandler(e) {
     const thirdSiblingNode = e.target.parentNode.previousElementSibling;
     firstSiblingNode.classList.remove("hideElement");
     thirdSiblingNode.classList.remove("hideElement");
-    firstSiblingNode.classList.add("fadeInRight");
-    thirdSiblingNode.classList.add("fadeInLeft");
+    if(screen>700){
+        thirdSiblingNode.classList.add("fadeInLeft");
+        firstSiblingNode.classList.add("fadeInRight");
+    }else{
+        thirdSiblingNode.classList.add("fadeInDown");
+        firstSiblingNode.classList.add("fadeInDown");
+    }
     e.target.classList.add("active-btn" , "no-hover");
 }
 
