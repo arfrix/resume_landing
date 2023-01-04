@@ -6,7 +6,7 @@ function removeItemsHandler(element) {
     const thirdSiblingNode = element.parentNode.previousElementSibling;
     firstSiblingNode.classList.add("hideElement");
     thirdSiblingNode.classList.add("hideElement");
-    element.classList.remove("active-btn");
+    element.classList.remove("active-btn" , "no-hover");
 }
 function ShowItemsHandler(e) {
     for (let element of buttons) {
@@ -18,7 +18,7 @@ function ShowItemsHandler(e) {
     thirdSiblingNode.classList.remove("hideElement");
     firstSiblingNode.classList.add("fadeInRight");
     thirdSiblingNode.classList.add("fadeInLeft");
-    e.target.classList.add("active-btn");
+    e.target.classList.add("active-btn" , "no-hover");
 }
 
 

@@ -87,6 +87,9 @@ li {
 .submenu-item:last-child {
   margin-bottom: 0;
 }
+.no-hover{
+  pointer-events: none;
+}
 
 .fadeInLeft {
   -webkit-animation-name: fadeInLeft;
