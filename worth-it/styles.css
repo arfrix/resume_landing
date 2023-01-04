@@ -5,6 +5,12 @@
          url(../assets/PeydaWeb-Bold.woff);
 }
 
+:root {
+    --big-size: 30px;
+    --nomal-size: 25px;
+    --small-size: 20px
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +19,11 @@
     -webkit-touch-callout: none;
     font-family: peyda;
 }
-    
+
+html {
+    overflow: hidden scroll;
+}
+
 :any-link {
     text-decoration: none;
     cursor: pointer;
@@ -24,12 +34,10 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 8rem 0;
     background-color: #F5F8F7;
 }
 
 .first-part {
-    margin: 1rem;
     padding: .5rem;
     border: dashed 3px #fff;
     border-radius: 30px;
@@ -37,6 +45,7 @@
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
+    margin: 0 140px;
 }
 
 .first-part-content {
@@ -50,7 +59,8 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 1.5rem;
+    width: 1600px;
+    height: 503px;
 }
 
 .first-part-video {
@@ -61,16 +71,19 @@
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     overflow: hidden;
-    max-width: 40rem;
-    height: 100%;
+    min-width: 720px;
+    height: 423px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 2rem;
+    margin: 40px;
+    overflow: hidden;
 }
 
 .first-part-video img {
     width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .first-part-video div {
@@ -78,32 +91,30 @@
     height: 100%;
     position: absolute;
     inset: 0 0 0 0;
-    background: linear-gradient(0deg, rgba(0,0,0,0.6) 20%, rgba(0,212,255,0) 60%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 20%, rgba(0,212,255,0) 60%);
 }
 
 .first-part-video svg {
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    right: 20px;
+    bottom: 20px;
     z-index: 5;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 60px;
+    height: 60px;
 }
 
 .first-part-text {
-    position: relative;
-    max-width: 40rem;
-    height: 100%;
-    margin-right: 2rem;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     text-align: right;
+    overflow: hidden;
+    height: 423px;
 }
 
 .first-part-text-title {
-    font-size: 1.5rem;
+    font-size: var(--big-size);
     font-weight: 200;
     word-spacing: 5px;
     color: #0A4737;
@@ -114,13 +125,14 @@
     text-align: right;
     line-height: 2;
     color: #191919;
-    font-size: 1rem;
+    font-size: var(--small-size);
+    margin-left: 40px;
 }
 
 .first-part-text button {
     margin-top: 1rem;
-    padding: .3rem 3rem .3rem 6rem;
-    font-size: 1.5rem;
+    padding: 12px 78px;
+    font-size: var(--nomal-size);
     background-color: #F51663;
     border: none;
     border-radius: 20px;
@@ -133,7 +145,6 @@
 }
 
 .second-part {
-    padding: 1.5rem 3rem;
     border: solid 3px #fff;
     border-radius: 30px;
     -webkit-border-radius: 30px;
@@ -145,14 +156,16 @@
     align-items: center;
     flex-direction: column;
     background-color: #ffffffaa;
-    margin-top: 5rem;
-    max-width: 50rem;
+    width: 1088px;
     text-align: right;
+    margin: 100px 416px;
+    margin-bottom: 0;
 }
 
 .second-part-title {
-    font-size: 1.5rem;
+    font-size: var(--big-size);
     word-spacing: 5px;
+    margin-top: 55px;
     margin-bottom: 1rem;
     color: #0A4737;
 }
@@ -161,16 +174,18 @@
     color: #191919;
     text-align: right;
     line-height: 2;
-    font-size: 1rem;
+    font-size: var(--small-size);
+    margin: 0 50px;
 }
 
 .second-part-items {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     margin-top: 1rem;
     width: 100%;
+    margin-bottom: 56px;
 }
 
 .second-part-item {
@@ -179,38 +194,34 @@
     align-items: center;
     flex-direction: row-reverse;
     margin: .8rem 0;
-    width: 100%;
+    margin-right: 50px;
+    margin-left: auto;
 }
 
 .second-part-item svg {
-    width: 1rem;
-    height: 1rem;
-    margin-left: .5rem;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
 }
 
 .second-part-item p {
     color: #B3B3B3;
     text-align: right;
-    font-size: 1rem;
+    font-size: var(--nomal-size);
 }
 
 .third-part {
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5rem;
-    max-width: 35rem;
+    margin-top: 95.5px;
+    width: 812px;
     text-align: right;
 }
 
 .third-part-title {
-    font-size: 1.5rem;
+    font-size: var(--big-size);
     word-spacing: 5px;
     margin-bottom: 1rem;
     color: #0A4737;
@@ -220,15 +231,15 @@
     color: #191919;
     text-align: right;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: var(--small-size);
 }
 
 .regret-text {
     color: #ff0000;
-    font-size: 1rem;
+    font-size: var(--small-size);
     text-align: right;
     position: relative;
-    right: 30rem;
+    right: 40rem;
     transform: rotate(-20deg);
     -webkit-transform: rotate(-20deg);
     -moz-transform: rotate(-20deg);
@@ -236,86 +247,658 @@
     -o-transform: rotate(-20deg);
 }
 
-@media only screen and (max-width: 800px) {
+/* @media screen and (max-width: 1800px) {
+    :root {
+        --big-size: 29px;
+        --nomal-size: 24px;
+        --small-size: 19px
+    }
+
+    .first-part {
+        margin: 0 140px;
+    }
+
+    .first-part-content {
+        width: 1500px;
+        height: 503px;
+    }
+
+    .first-part-video {
+        min-width: 720px;
+        height: 443px;
+        margin: 30px;
+    }
+
+    .first-part-video svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 30px;
+    }
+
+    .first-part-text button {
+        margin-top: 1rem;
+        padding: 12px 78px;
+    }
+
+    .second-part {
+        width: 988px;
+        text-align: right;
+        margin: 100px 416px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 50px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 56px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+
+    .third-part {
+        margin-top: 95.5px;
+        width: 712px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 35rem;
+    }
+} */
+
+@media screen and (max-width: 1600px) {
+    :root {
+        --big-size: 28px;
+        --nomal-size: 23px;
+        --small-size: 18px
+    }
+
+    .first-part {
+        margin: 0 140px;
+    }
+
+    .first-part-content {
+        width: 1400px;
+        height: 503px;
+    }
+
+    .first-part-video {
+        min-width: 720px;
+        height: 443px;
+        margin: 30px;
+    }
+
+    .first-part-video svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 30px;
+    }
+
+    .first-part-text button {
+        margin-top: 1rem;
+        padding: 12px 78px;
+    }
+
+    .second-part {
+        width: 888px;
+        text-align: right;
+        margin: 80px 300px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 50px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 56px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 25px;
+        height: 25px;
+        margin-left: 10px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 612px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 30rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    :root {
+        --big-size: 27px;
+        --nomal-size: 22px;
+        --small-size: 17px
+    }
+
+    .first-part {
+        margin: 0 140px;
+    }
+
+    .first-part-content {
+        width: 1200px;
+        height: 503px;
+    }
+
+    .first-part-video {
+        min-width: 620px;
+        height: 453px;
+        margin: 20px;
+    }
+
+    .first-part-video svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 30px;
+    }
+
+    .first-part-text button {
+        margin-top: 1rem;
+        padding: 10px 68px;
+    }
+
+    .second-part {
+        width: 788px;
+        text-align: right;
+        margin: 60px 200px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 40px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 56px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 612px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 30rem;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    :root {
+        --big-size: 26px;
+        --nomal-size: 22px;
+        --small-size: 16px;
+    }
+
+    .first-part {
+        margin: 0 140px;
+    }
+
+    .first-part-content {
+        width: 1000px;
+        height: 450px;
+    }
+
+    .first-part-video {
+        min-width: 420px;
+        height: 400px;
+        margin: 20px;
+    }
+
+    .first-part-video svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 30px;
+    }
+
+    .first-part-text button {
+        margin-top: 1rem;
+        padding: 10px 68px;
+    }
+
+    .second-part {
+        width: 788px;
+        text-align: right;
+        margin: 60px 200px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 40px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 56px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 30px;
+        height: 30px;
+        margin-left: 15px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 612px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 30rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    :root {
+        --big-size: 20px;
+        --nomal-size: 16px;
+        --small-size: 11px;
+    }
+
+    .first-part {
+        margin: 0;
+    }
+
+    .first-part-content {
+        width: 800px;
+        height: 350px;
+    }
+
+    .first-part-video {
+        min-width: 400px;
+        height: 300px;
+        margin: 20px;
+    }
+
+    .first-part-video svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 30px;
+    }
+
+    .first-part-text button {
+        margin-top: 1rem;
+        padding: 5px 48px;
+    }
+
+    .second-part {
+        width: 688px;
+        text-align: right;
+        margin: 60px 200px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 55px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 40px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 56px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 50px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 512px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 22rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    :root {
+        --big-size: 20px;
+        --nomal-size: 16px;
+        --small-size: 10px;
+    }
+
+    .first-part {
+        margin: 0;
+    }
+
+    .first-part-content {
+        width: 700px;
+        height: 350px;
+    }
+
+    .first-part-video {
+        min-width: 300px;
+        height: 300px;
+        margin: 20px;
+    }
+
+    .first-part-video svg {
+        width: 60px;
+        height: 60px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 30px;
+    }
+
+    .first-part-text button {
+        margin-top: 1rem;
+        padding: 5px 48px;
+    }
+
+    .second-part {
+        width: 600px;
+        text-align: right;
+        margin: 60px 200px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 45px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 20px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 412px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 19rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --big-size: 19px;
+        --nomal-size: 13px;
+        --small-size: 9px;
+    }
+
+    .first-part {
+        margin: 0;
+    }
+
+    .first-part-content {
+        width: 500px;
+        height: 300px;
+    }
+
+    .first-part-video {
+        min-width: 200px;
+        height: 260px;
+        margin: 20px;
+    }
+
+    .first-part-video svg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .first-part-text {
+        height: 443px;
+    }
+
+    .first-part-text p {
+        margin-left: 20px;
+    }
+
+    .first-part-text button {
+        margin-top: .5rem;
+        padding: 2px 28px;
+    }
+
+    .second-part {
+        width: 400px;
+        text-align: right;
+        margin: 50px 100px;
+    }
+
+    .second-part-title {
+        word-spacing: 5px;
+        margin-top: 35px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 20px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 312px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        right: 15rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    :root {
+        --big-size: 20px;
+        --nomal-size: 18px;
+        --small-size: 16px
+    }
+
     .first-part-content {
         justify-content: center;
         align-items: space-between;
         flex-direction: column;
-        padding: 3rem;
     }
 
-    .first-part-video {
-        margin-left: 0;
-        margin-bottom: 2rem;
-        max-width: 50rem;
-    }
-
-    .first-part-text {
-        margin-right: 0;
-        margin-top: 2rem;
-        max-width: 50rem;
-    }
-    
-    .first-part-text p {
-        font-size: 1.5rem;
-    }
-
-    .first-part-text-title {
-        font-size: 2rem;
-    }
-
-    .first-part-text button {
-        font-size: 2rem;
-    }
-
-    .second-part {
-        width: 55rem;
-        padding: 2rem;
-    }
-
-    .second-part-title {
-        font-size: 2rem;
-        white-space: nowrap;
-    }
-
-    .second-part-item svg {
-        width: 2rem;
-        height: 2rem;
-    }
-
-    .second-part-text {
-        font-size: 1.5rem;
-    }
-
-    .second-part-item p {
-        font-size: 1.2rem;
-    }
-    
-    .third-part {
-        width: 50rem;
-    }
-    
-    .third-part-title {
-        font-size: 2rem;
-    }
-
-    .third-part-text {
-        font-size: 1.5rem;
-    }
-
-    .regret-text {
-        right: 10rem;
-        margin-top: 5rem;
-        font-size: 1.2rem;
-    }
-}
-
-@media only screen and (max-width: 460px) {
     .first-part-content {
-        padding: 1.5rem;
+        width: 400px;
+        height: auto;
     }
 
     .first-part-video {
+        min-width: 380px;
+        height: 200px;
+        margin: 10px;
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
@@ -323,25 +906,201 @@
         -o-border-radius: 30px;
     }
 
+    .first-part-text {
+        height: auto;
+        margin: 10px 20px;
+    }
+
+    .first-part-text p {
+        margin: 0;
+    }
+
+    .first-part-text button {
+        border-radius: 15px;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+    }
+
+    .first-part-video svg {
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
     .second-part {
-        width: 50rem;
-        padding: 2rem;
+        width: 400px;
+        text-align: right;
+        margin: 50px 100px;
+    }
+
+    .second-part-title {
+        word-spacing: 0;
+        margin-top: 35px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 20px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 45px;
+    }
+
+    .second-part-item {
+        margin: .8rem 0;
+        margin-right: 20px;
+        margin-left: auto;
     }
 
     .second-part-item svg {
-        min-width: 1.5rem;
-        min-height: 1.5rem;
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .third-part {
+        margin-top: 0;
+        width: 312px;
+        text-align: right;
+    }
+
+    .third-part-title {
+        word-spacing: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .regret-text {
+        top: 2rem;
+        right: 12rem;
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media screen and (max-width: 450px) {
+    :root {
+        --big-size: 20px;
+        --nomal-size: 18px;
+        --small-size: 16px
+    }
+
+    .first-part-content {
+        width: 300px;
+    }
+
+    .first-part-video {
+        min-width: 280px;
+        height: 150px;
+    }
+
     .second-part {
-        width: 45rem;
+        width: 300px;
+        margin: 50px 100px;
+    }
+
+    .second-part-title {
+        word-spacing: 0;
+        margin-top: 25px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 10px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .second-part-item {
+        margin: .5rem 0;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .third-part {
+        width: 212px;
+    }
+
+    .regret-text {
+        top: 2rem;
+        right: 12rem;
     }
 }
 
-@media only screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
+    :root {
+        --big-size: 20px;
+        --nomal-size: 18px;
+        --small-size: 16px
+    }
+
+    .first-part-content {
+        width: 300px;
+        padding: 30px 20px;
+    }
+
+    .first-part-video {
+        min-width: 265px;
+        height: 153px;
+    }
+
     .second-part {
-        width: 40rem;
+        width: 335px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    .second-part-title {
+        word-spacing: 0;
+        margin-top: 25px;
+        margin-bottom: 1rem;
+    }
+
+    .second-part-text {
+        margin: 0 10px;
+    }
+
+    .second-part-items {
+        margin-top: 1rem;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .second-part-item {
+        margin: .5rem 0;
+        margin-right: 10px;
+        margin-left: auto;
+    }
+
+    .second-part-item svg {
+        width: 20px;
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .second-part-item p {
+        font-size: 14px;
+    }
+
+    .third-part {
+        width: 335px;
+    }
+
+    .regret-text {
+        top: 3rem;
+        right: 6rem;
     }
 }
