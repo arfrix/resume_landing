@@ -1684,6 +1684,9 @@ li {
   .wish-section {
     padding: 0 50px;
   }
+  .wish-list-btn {
+    width: 320px;
+  }
   .left-submenu {
     margin-right: 50px;
   }
@@ -1693,7 +1696,7 @@ li {
 }
 @media screen and (max-width: 866px) {
   .wish-list-btn {
-    width: 280px;
+    width: 210px;
     height: 60px;
   }
 }
